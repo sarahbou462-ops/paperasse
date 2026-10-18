@@ -59,7 +59,7 @@ L'agent va cloner le repo, installer les skills, et lancer le setup guidé qui v
 
 ---
 
-## Les 5 skills
+## Les 6 skills
 
 | Skill | Rôle | Ce qu'il fait |
 |-------|------|---------------|
@@ -68,6 +68,7 @@ L'agent va cloner le repo, installer les skills, et lancer le setup guidé qui v
 | **`commissaire-aux-comptes`** | Commissaire aux Comptes | Audit NEP en 7 phases, validation croisée bilan/CR/liasse, opinion motivée |
 | **`notaire`** | Notaire | Frais de notaire, plus-value immobilière, successions, donations, SCI, PACS, diagnostics, conseil patrimonial |
 | **`syndic`** | Syndic de Copropriété | Gestion d'un parc de copropriétés : AG, appels de fonds, comptabilité (décret 2005), travaux, fournisseurs, impayés, transition de syndic |
+| **`automatisation-pme`** | Consultant en automatisation | Pour TPE/PME : questions en rendez-vous, audit des tâches répétitives, chiffrage du temps gagné pour le patron, mise en place pas à pas avec l'employé |
 
 ---
 

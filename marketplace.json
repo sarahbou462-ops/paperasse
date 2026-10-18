@@ -34,9 +34,18 @@
       "name": "Syndic de Copropriété",
       "path": "syndic/SKILL.md",
       "description": "Gestion complète de copropriété, AG, appels de fonds, comptabilité, travaux, contentieux"
+    },
+    {
+      "slug": "automatisation-pme",
+      "name": "Automatisation PME",
+      "path": "automatisation-pme/SKILL.md",
+      "description": "Audit d'automatisation pour TPE/PME : questions en RDV, chiffrage du temps gagné, mise en place pas à pas"
     }
   ],
-  "integrations": ["qonto", "stripe"],
+  "integrations": [
+    "qonto",
+    "stripe"
+  ],
   "language": "fr",
   "country": "FR"
 }

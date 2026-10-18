@@ -164,6 +164,7 @@ def get_iteration_id() -> tuple[str, bool]:
             "notaire/",
             "comptable/",
             "syndic/",
+            "automatisation-pme/",
         ]
         unstaged = _run_git("diff", "--name-only", "--", *skill_dirs).stdout.strip()
         staged = _run_git("diff", "--cached", "--name-only", "--", *skill_dirs).stdout.strip()

@@ -1,0 +1,48 @@
+{
+  "skill_name": "automatisation-pme",
+  "evals": [
+    {
+      "id": 1,
+      "name": "rdv-plombier-devis",
+      "prompt": "RDV. Plombier, 3 salariés. Il me dit qu'il refait les devis le soir à la main à partir de ses notes de chantier.",
+      "expected_output": "Au plus 5 questions courtes, numérotées, adaptées aux devis du plombier, sans introduction ni explication.",
+      "files": [],
+      "assertions": [
+        "La réponse contient au plus 5 questions",
+        "Les questions sont adaptées aux devis (fréquence/durée, source des notes, outil où finit le devis)",
+        "La réponse demande quels logiciels sont déjà payés",
+        "La réponse ne contient ni introduction ni explication autour des questions"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "audit-kebab-notes-brutes",
+      "prompt": "AUDIT. notes kebab rue jean jaures : le gerant karim fait les commandes fournisseurs le dimanche soir sur papier puis les envoie par sms au grossiste, ca lui prend 1h chaque semaine. son employé recopie le ticket Z de la caisse dans un excel tous les soirs 10 min. ils ont gmail et un excel. les avis google il repond jamais. ils ont aussi parfois des commandes uber eats qui bugent.",
+      "expected_output": "Liste les tâches (commandes fournisseurs, recopie ticket Z, réponses aux avis Google, souci Uber Eats), tableau avec automatisabilité, temps gagné calculé (environ 4,3 h/mois pour la commande, environ 4,3 h/mois pour le ticket Z si tous les soirs, avis = à demander), outils déjà payés privilégiés, une seule tâche recommandée avec deux lignes de justification, chiffrage à 18 €/h et 5 €/h en 3 lignes pour le patron.",
+      "files": [],
+      "assertions": [
+        "Les tâches commande fournisseurs, recopie du ticket Z et réponses aux avis Google sont listées",
+        "Le tableau contient les colonnes Tâche, Automatisable ?, Temps gagné / mois, Outil conseillé, Coût / mois, Difficulté",
+        "Le temps gagné des avis Google est indiqué « à demander »",
+        "Les outils déjà payés (Gmail, Excel) sont privilégiés avant un outil payant",
+        "Une seule tâche est recommandée pour commencer, avec une justification en deux lignes",
+        "Le chiffrage utilise 18 € de l'heure et 5 € par heure économisée, avec des calculs justes",
+        "Le chiffrage se termine par 3 phrases à dire au patron",
+        "Aucun prix d'abonnement précis n'est inventé sans mention « à vérifier »"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "mise-en-place-une-etape",
+      "prompt": "MISE EN PLACE. Cabinet d'infirmières. On automatise la relance des patients qui n'ont pas confirmé leur rendez-vous. Elles ont Google Workspace.",
+      "expected_output": "Le premier message ne donne que l'étape 0 : vérifier les accès, faire un exemple réel de bout en bout, lister les cas particuliers. Puis attend la réponse. Mentionne la prudence sur les données de santé.",
+      "files": [],
+      "assertions": [
+        "La réponse commence par les vérifications avec l'employé (accès, exemple réel de bout en bout, cas particuliers)",
+        "La réponse ne donne pas les étapes de configuration suivantes dans le même message",
+        "La réponse demande au consultant de revenir avec ses réponses avant de continuer",
+        "La réponse signale la sensibilité des données patients"
+      ]
+    }
+  ]
+}
